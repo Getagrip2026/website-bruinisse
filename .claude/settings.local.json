@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\(color|colour|kleur|font|#[0-9a-fA-F]{3,6}|rgb|blauw|groen|blue|green|primary|accent\\)\")",
+      "Bash(/usr/bin/python3 -c \":*)",
+      "Bash(/usr/bin/python3 --version)",
+      "Bash(/usr/bin/python3 -c \"print\\(''hello''\\)\")",
+      "Bash(npm --version)",
+      "Read(//usr/local/bin/**)",
+      "Read(//Users/Lieneke/.nvm/versions/**)",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//opt/**)"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "mijn-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "screenshot": "node screenshot.js",
+    "screenshot:mobile": "node screenshot.js --mobile"
+  },
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  }
+}
