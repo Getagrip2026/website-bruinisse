@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Updates – Samen Verder</title>
+  <meta name="description" content="Blijf op de hoogte van de laatste updates over de verkenning tussen CBS Op Dreef en OBS De Meerpaal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+<body>
+
+  <header>
+    <nav class="nav" aria-label="Hoofdnavigatie">
+      <div class="container--wide nav__inner">
+        <div class="nav__logos">
+          <img src="brand_assets/logo cbs op dreef.png" alt="CBS Op Dreef" />
+          <div class="nav__sep" aria-hidden="true"></div>
+          <img src="brand_assets/logo obs de meerpaal .png" alt="OBS De Meerpaal" />
+        </div>
+        <ul class="nav__links" id="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="uitleg.html">Uitleg</a></li>
+          <li><a href="toekomst.html">Toekomst</a></li>
+          <li><a href="tijdlijn.html">Tijdlijn</a></li>
+          <li><a href="updates.html">Updates</a></li>
+          <li><a href="faq.html">Vragen</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav__toggle" id="nav-toggle" aria-expanded="false"
+                aria-controls="nav-links" aria-label="Menu openen">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Intro -->
+    <section style="background: var(--color-blue-50); padding: var(--space-16) 0 var(--space-10);">
+      <div class="container">
+        <span class="eyebrow">Updates</span>
+        <h1>Laatste berichten</h1>
+        <div class="rule"></div>
+        <p class="lead" style="max-width: 640px;">
+          Hier vindt u de meest recente informatie over het verkenningsproces.
+          Deze pagina wordt bijgehouden zodra er nieuws is.
+        </p>
+      </div>
+    </section>
+
+    <!-- Updates lijst -->
+    <section style="padding: var(--space-20) 0 var(--space-24);">
+      <div class="container">
+        <div style="max-width: 720px; display: flex; flex-direction: column; gap: var(--space-8);">
+
+          <!-- Update 1 -->
+          <article style="
+            background: white;
+            border: 1px solid var(--color-blue-100, #D2EAF5);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            box-shadow: var(--shadow-xs);
+          ">
+            <time datetime="2026-02-01" style="
+              font-size: 0.875rem;
+              color: var(--color-neutral-500);
+              display: block;
+              margin-bottom: var(--space-2);
+            ">Februari 2026</time>
+            <h2 style="font-size: 1.15rem; margin-bottom: var(--space-3);">Start van de verkenning</h2>
+            <p>
+              CBS Op Dreef en OBS De Meerpaal zijn officieel gestart met een
+              gezamenlijke verkenning. Schoolbesturen, directeuren en
+              medewerkers zijn betrokken bij dit proces.
+            </p>
+          </article>
+
+          <!-- Placeholder voor toekomstige updates -->
+          <div style="
+            background: var(--color-blue-50);
+            border: 2px dashed var(--color-blue-300);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            text-align: center;
+            color: var(--color-neutral-500);
+          ">
+            Nieuwe updates volgen hier zodra er nieuws is.
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container--wide footer__inner">
+      <div class="footer__logos">
+        <img src="brand_assets/logo cbs op dreef.png" alt="CBS Op Dreef Bruinisse" />
+        <div class="nav__sep" aria-hidden="true"></div>
+        <img src="brand_assets/logo obs de meerpaal .png" alt="OBS De Meerpaal Bruinisse" />
+      </div>
+      <p class="footer__text">
+        © 2026 CBS Op Dreef &amp; OBS De Meerpaal, Bruinisse<br />
+        Dit is een informatiewebsite over een lopende verkenning.
+      </p>
+      <nav class="footer__links" aria-label="Footernavigatie">
+        <a href="#">Privacy</a>
+        <a href="#">Toegankelijkheid</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const links  = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    links.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        links.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+</body>
+</html>

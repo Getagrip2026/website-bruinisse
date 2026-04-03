@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 </head>
 
 <body>
@@ -29,11 +30,13 @@
         </div>
 
         <ul class="nav__links" id="nav-links" role="list">
-          <li><a href="#uitleg">Wat speelt er?</a></li>
-          <li><a href="#waarom">Achtergrond</a></li>
-          <li><a href="#tijdlijn">Tijdlijn</a></li>
-          <li><a href="#faq">Vragen</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="uitleg.html">Uitleg</a></li>
+          <li><a href="toekomst.html">Toekomst</a></li>
+          <li><a href="tijdlijn.html">Tijdlijn</a></li>
+          <li><a href="updates.html">Updates</a></li>
+          <li><a href="faq.html">Vragen</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
 
         <button class="nav__toggle"
@@ -195,21 +198,11 @@
         </div>
 
         <div class="video-frame" role="region" aria-label="Informatievideo">
-          <!--
-            Vervang onderstaand blok door een iframe zodra de video beschikbaar is:
-            <iframe
-              src="https://www.youtube.com/embed/VIDEO_ID"
-              title="Uitlegvideo samenwerking CBS Op Dreef en OBS De Meerpaal"
-              allowfullscreen>
-            </iframe>
-          -->
-          <div class="video-frame__placeholder" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <circle cx="12" cy="12" r="10"/>
-              <path d="M10 8l6 4-6 4V8z" fill="currentColor" stroke="none"/>
-            </svg>
-            Video volgt hier
-          </div>
+          <video controls preload="metadata" style="width: 100%; border-radius: var(--radius-lg); display: block;">
+            <source src="brand_assets/8mb.video-XWl-yVoO1y02.mp4" type="video/mp4" />
+            Uw browser ondersteunt geen video. Download de video via
+            <a href="brand_assets/8mb.video-XWl-yVoO1y02.mp4">deze link</a>.
+          </video>
         </div>
 
       </div>
@@ -852,8 +845,6 @@
         Dit is een informatiewebsite over een lopende verkenning.
       </p>
 
-      <p>Test</p>
-      <!-- footer -->
 
       <nav class="footer__links" aria-label="Footernavigatie">
         <a href="#">Privacy</a>

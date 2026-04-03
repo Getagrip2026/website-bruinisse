@@ -176,13 +176,10 @@ mijn-website/
 
 ## Openstaande punten
 
-- [ ] Video-URL invullen in `index.html` (zie commentaar in sectie #video)
-- [ ] PDF merkrichtlijnen lezen zodra poppler beschikbaar is — kleuren eventueel bijstellen
-- [ ] Formulier koppelen aan backend of e-mailservice (bijv. Formspree, Netlify Forms)
-- [ ] Favicon toevoegen
-- [ ] Pagina's toevoegen: Uitleg, Toekomstperspectief, Tijdlijn, FAQ, Updates, Contact
-- [ ] Echte foto's toevoegen (authentiek, geen stockfoto's — zie CLAUDE.md)
-- [ ] Toegankelijkheid testen: tabvolgorde, contrast, schermlezer
+- [ ] Echte foto's plaatsen — placeholders staan klaar op Uitleg, Toekomst en Tijdlijn
+- [ ] Toegankelijkheid testen — tabvolgorde, contrast, schermlezer
+- [ ] Formulier activeren — `directie@cbsopdreef.nl` moet de activatiemail van Formsubmit eenmalig bevestigen
+- [ ] Wijzigingen pushen naar GitHub / Netlify (staan lokaal klaar, nog niet gepusht)
 
 ---
 
