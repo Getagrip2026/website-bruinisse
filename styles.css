@@ -70,7 +70,7 @@
   --shadow-lg: 0 8px 32px rgba(0,0,0,.10), 0 2px 8px rgba(0,0,0,.04);
 
   /* Layout */
-  --container:      960px;
+  --container:      1100px;
   --container-wide: 1280px;
 
   /* Nav height – used for scroll offset compensation */
@@ -610,14 +610,14 @@ textarea {
 }
 
 .video-section .lead {
-  max-width: 500px;
+  max-width: 620px;
   margin-inline: auto;
   margin-top: var(--space-6);
 }
 
 .video-frame {
   position: relative;
-  max-width: 680px;
+  max-width: 860px;
   margin-inline: auto;
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -1373,11 +1373,11 @@ section[id] {
 
 .page-hero h1 {
   margin-bottom: var(--space-10);
-  max-width: 680px;
+  max-width: 820px;
 }
 
 .page-hero__intro {
-  max-width: 620px;
+  max-width: 760px;
   font-size: 1.02rem;
   color: var(--color-neutral-700);
   line-height: 1.8;
@@ -1386,7 +1386,7 @@ section[id] {
 
 /* ─── Prose (long-form content) ───────────────────────────── */
 .prose {
-  max-width: 680px;
+  max-width: 860px;
 }
 
 .prose h2 {
