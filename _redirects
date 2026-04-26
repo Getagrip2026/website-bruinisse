@@ -1,0 +1,10 @@
+# Netlify _redirects
+# Old single-page hash anchors → new pages (handled in JS too, but this covers direct links)
+/#uitleg        /wat-speelt-er                          301
+/#waarom        /wat-speelt-er/waarom-dit-traject       301
+/#tijdlijn      /het-proces/planning-tijdlijn           301
+/#updates       /nieuws-agenda/nieuwsberichten          301
+/#agenda        /nieuws-agenda/agenda                   301
+/#faq           /wat-speelt-er/veelgestelde-vragen      301
+/#contact       /meedenken/stel-een-vraag               301
+/#video         /wat-speelt-er/waarom-dit-traject       301

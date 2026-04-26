@@ -3,1051 +3,271 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samen Verder – Verkenning CBS Op Dreef & OBS De Meerpaal</title>
-  <meta name="description" content="CBS Op Dreef en OBS De Meerpaal in Bruinisse verkennen samen mogelijke samenwerking. Er is nog geen besluit genomen. Ouders worden bij elke stap betrokken." />
+  <title>Samen Verder – Onderwijs Bruinisse</title>
+  <meta name="description" content="CBS Op Dreef en OBS De Meerpaal in Bruinisse onderzoeken samen mogelijke samenwerking. Er is nog geen besluit genomen." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
-
 <body>
 
-  <!-- ═══════════════════════════════════════
-       NAVIGATIE
-  ═══════════════════════════════════════ -->
+  <div class="status-bar" role="status">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    Fase 2 — er is nog geen besluit genomen
+  </div>
+
   <header>
     <nav class="nav" aria-label="Hoofdnavigatie">
       <div class="container--wide nav__inner">
-
         <div class="nav__logos">
-          <img src="brand_assets/logo cbs op dreef.png"
-               alt="CBS Op Dreef" />
+          <a href="/" aria-label="Naar homepage">
+            <img src="/brand_assets/logo cbs op dreef.png" alt="CBS Op Dreef" />
+          </a>
           <div class="nav__sep" aria-hidden="true"></div>
-          <img src="brand_assets/logo obs de meerpaal .png"
-               alt="OBS De Meerpaal" />
+          <a href="/" aria-label="Naar homepage">
+            <img src="/brand_assets/logo obs de meerpaal .png" alt="OBS De Meerpaal" />
+          </a>
         </div>
 
         <ul class="nav__links" id="nav-links" role="list">
-          <li><a href="#uitleg">Wat speelt er?</a></li>
-          <li><a href="#waarom">Achtergrond</a></li>
-          <li><a href="#tijdlijn">Tijdlijn</a></li>
-          <li><a href="#updates">Updates</a></li>
-          <li><a href="#agenda">Agenda</a></li>
-          <li><a href="#faq">Vragen</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="nav__item has-dropdown">
+            <a href="/wat-speelt-er" class="nav__toplevel">Wat speelt er?
+              <svg class="nav__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="nav__dropdown">
+              <li><a href="/wat-speelt-er/waarom-dit-traject">Waarom dit traject?</a></li>
+              <li><a href="/wat-speelt-er/veelgestelde-vragen">Veelgestelde vragen</a></li>
+            </ul>
+          </li>
+          <li class="nav__item has-dropdown">
+            <a href="/het-proces" class="nav__toplevel">Het proces
+              <svg class="nav__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="nav__dropdown">
+              <li><a href="/het-proces/planning-tijdlijn">Planning &amp; tijdlijn</a></li>
+              <li><a href="/het-proces/kort-tijdsbestek">Waarom een kort tijdsbestek?</a></li>
+              <li><a href="/het-proces/wie-beslist-wat">Wie beslist wat?</a></li>
+            </ul>
+          </li>
+          <li class="nav__item has-dropdown">
+            <a href="/onderwijs-identiteit" class="nav__toplevel">Onderwijs &amp; identiteit
+              <svg class="nav__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="nav__dropdown">
+              <li><a href="/onderwijs-identiteit/samenwerkingsschool">Wat is een samenwerkingsschool?</a></li>
+              <li><a href="/onderwijs-identiteit/schooldag">Hoe ziet de schooldag eruit?</a></li>
+              <li><a href="/onderwijs-identiteit/verhaal-thea">Verhaal van Thea</a></li>
+              <li><a href="/onderwijs-identiteit/wat-wordt-beter">Wat wordt er beter voor kinderen?</a></li>
+            </ul>
+          </li>
+          <li class="nav__item has-dropdown">
+            <a href="/meedenken" class="nav__toplevel">Meedenken
+              <svg class="nav__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="nav__dropdown">
+              <li><a href="/meedenken/klankbordgroep">Klankbordgroep</a></li>
+              <li><a href="/meedenken/stel-een-vraag">Stel een vraag</a></li>
+              <li><a href="/meedenken/uw-mening-telt">Uw mening telt</a></li>
+            </ul>
+          </li>
+          <li class="nav__item has-dropdown">
+            <a href="/nieuws-agenda" class="nav__toplevel">Nieuws &amp; agenda
+              <svg class="nav__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="nav__dropdown">
+              <li><a href="/nieuws-agenda/nieuwsberichten">Nieuwsberichten</a></li>
+              <li><a href="/nieuws-agenda/agenda">Agenda bijeenkomsten</a></li>
+              <li><a href="/nieuws-agenda/nieuwsbrieven">Nieuwsbrieven</a></li>
+            </ul>
+          </li>
         </ul>
 
-        <button class="nav__toggle"
-                id="nav-toggle"
-                aria-expanded="false"
-                aria-controls="nav-links"
-                aria-label="Menu openen">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
-               stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu openen">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <line x1="3" y1="6" x2="21" y2="6"/>
             <line x1="3" y1="12" x2="21" y2="12"/>
             <line x1="3" y1="18" x2="21" y2="18"/>
           </svg>
         </button>
-
       </div>
     </nav>
   </header>
 
   <main>
 
-    <!-- ═══════════════════════════════════════
-         1. HERO
-    ═══════════════════════════════════════ -->
+    <!-- Hero -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="container">
         <div class="hero__grid">
-
-          <!-- Linker kolom: tekst -->
           <div class="hero__content">
-
-            <span class="badge badge--green">
-              Fase 2 – er is nog geen besluit genomen
-            </span>
-
+            <span class="badge badge--green">Fase 2 — er is nog geen besluit genomen</span>
             <h1 id="hero-title">
-              CBS Op Dreef en OBS De Meerpaal<br />
-              <em>onderzoeken verdere samenwerking</em>
+              CBS Op Dreef en OBS De Meerpaal werken samen aan de toekomst van het onderwijs in Bruinisse
             </h1>
-
             <p class="lead hero__intro">
-              De scholen werken stap voor stap aan de toekomst van het onderwijs
-              in Bruinisse. Op deze website leest u waarom dit onderzoek loopt,
-              waar we nu staan en wat dit kan betekenen voor ouders en kinderen.
+              De scholen onderzoeken of samenwerking kan helpen om ook in de toekomst goed onderwijs te blijven bieden
+              aan alle kinderen in het dorp. Op deze website leest u waarom dit onderzoek loopt, waar we nu staan en
+              wat dit kan betekenen voor u en uw kind.
             </p>
-
-            <a href="#uitleg" class="btn btn--primary">
-              Lees meer
-            </a>
-
+            <div style="display:flex; flex-wrap:wrap; gap:12px;">
+              <a href="/wat-speelt-er/waarom-dit-traject" class="btn btn--primary">Wat speelt er?</a>
+              <a href="/nieuws-agenda/agenda" class="btn btn--ghost">Komende bijeenkomsten</a>
+              <a href="/meedenken/stel-een-vraag" class="btn btn--ghost">Stel een vraag</a>
+            </div>
           </div>
 
-          <!-- Rechter kolom: abstracte procesvisualisatie -->
           <div class="hero__visual" aria-hidden="true">
-            <svg viewBox="0 0 460 360" xmlns="http://www.w3.org/2000/svg">
-
-              <!-- Zachte achtergrondcirkels per school -->
-              <circle cx="162" cy="180" r="132" fill="#EEF7FC" />
-              <circle cx="298" cy="180" r="132" fill="#EAF5EE" />
-
-              <!-- Buitenste booglijnen -->
-              <circle cx="162" cy="180" r="132" fill="none" stroke="#2797BA" stroke-width="1.5" opacity="0.22" />
-              <circle cx="298" cy="180" r="132" fill="none" stroke="#4FA064" stroke-width="1.5" opacity="0.22" />
-
-              <!-- Binnenste stippelringen -->
-              <circle cx="162" cy="180" r="82"  fill="none" stroke="#2797BA" stroke-width="1" opacity="0.14" stroke-dasharray="4 7" />
-              <circle cx="298" cy="180" r="82"  fill="none" stroke="#4FA064" stroke-width="1" opacity="0.14" stroke-dasharray="4 7" />
-
-              <!-- Centrale ontmoetingszone -->
-              <ellipse cx="230" cy="180" rx="42" ry="78" fill="white" opacity="0.45" />
-
-              <!-- Middelpunt -->
-              <circle cx="230" cy="180" r="22" fill="white" stroke="#2797BA" stroke-width="1.5" opacity="0.45" />
-              <circle cx="230" cy="180" r="36" fill="none" stroke="#2797BA" stroke-width="1"   opacity="0.10" />
-              <circle cx="230" cy="180" r="50" fill="none" stroke="#2797BA" stroke-width="0.8" opacity="0.06" />
-              <circle cx="230" cy="180" r="8"  fill="#5CB5D6" opacity="0.40" />
-
-              <!-- Kleine ankerpunten op de bogen -->
-              <circle cx="82"  cy="118" r="4.5" fill="#2797BA" opacity="0.50" />
-              <circle cx="378" cy="118" r="4.5" fill="#4FA064" opacity="0.50" />
-              <circle cx="82"  cy="242" r="4.5" fill="#2797BA" opacity="0.50" />
-              <circle cx="378" cy="242" r="4.5" fill="#4FA064" opacity="0.50" />
-
-              <!-- Korte verbindingslijntjes naar labels -->
-              <line x1="82"  y1="118" x2="58"  y2="98"  stroke="#2797BA" stroke-width="1" opacity="0.28" />
-              <line x1="378" y1="118" x2="398" y2="96"  stroke="#4FA064" stroke-width="1" opacity="0.28" />
-              <line x1="82"  y1="242" x2="52"  y2="264" stroke="#2797BA" stroke-width="1" opacity="0.28" />
-              <line x1="378" y1="242" x2="400" y2="264" stroke="#4FA064" stroke-width="1" opacity="0.28" />
-
-              <!-- Label: kwaliteit (blauw, linksboven) -->
-              <g transform="translate(6, 72)">
-                <rect width="88" height="28" rx="14" fill="white" stroke="#D2EAF5" stroke-width="1.5"/>
-                <text x="44" y="18.5" text-anchor="middle"
-                      font-size="11.5" fill="#3E4D58"
-                      font-family="Inter, system-ui, sans-serif" font-weight="500">kwaliteit</text>
-              </g>
-
-              <!-- Label: identiteit (groen, rechtsboven) -->
-              <g transform="translate(366, 68)">
-                <rect width="80" height="28" rx="14" fill="white" stroke="#C8E8D2" stroke-width="1.5"/>
-                <text x="40" y="18.5" text-anchor="middle"
-                      font-size="11.5" fill="#3E4D58"
-                      font-family="Inter, system-ui, sans-serif" font-weight="500">identiteit</text>
-              </g>
-
-              <!-- Label: ondersteuning (blauw, linksonder) -->
-              <g transform="translate(0, 252)">
-                <rect width="112" height="28" rx="14" fill="white" stroke="#D2EAF5" stroke-width="1.5"/>
-                <text x="56" y="18.5" text-anchor="middle"
-                      font-size="11.5" fill="#3E4D58"
-                      font-family="Inter, system-ui, sans-serif" font-weight="500">ondersteuning</text>
-              </g>
-
-              <!-- Label: toekomst (groen, rechtsonder) -->
-              <g transform="translate(356, 256)">
-                <rect width="84" height="28" rx="14" fill="white" stroke="#C8E8D2" stroke-width="1.5"/>
-                <text x="42" y="18.5" text-anchor="middle"
-                      font-size="11.5" fill="#3E4D58"
-                      font-family="Inter, system-ui, sans-serif" font-weight="500">toekomst</text>
-              </g>
-
-              <!-- Subtiel midden-label -->
-              <text x="230" y="183" text-anchor="middle"
-                    font-size="8.5" fill="#6B7A84" opacity="0.75"
-                    font-family="Inter, system-ui, sans-serif"
-                    letter-spacing="0.10em">VERKENNING</text>
-
+            <svg viewBox="0 0 460 340" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="155" cy="170" r="130" fill="#EEF7FC" stroke="#2797BA" stroke-width="1.5" opacity="0.5"/>
+              <circle cx="305" cy="170" r="130" fill="#EAF5EE" stroke="#4FA064" stroke-width="1.5" opacity="0.5"/>
+              <path d="M 80 120 Q 230 80 380 120" stroke="#2797BA" stroke-width="1.5" fill="none" opacity="0.4" stroke-dasharray="5 4"/>
+              <path d="M 80 220 Q 230 260 380 220" stroke="#4FA064" stroke-width="1.5" fill="none" opacity="0.4" stroke-dasharray="5 4"/>
+              <circle cx="230" cy="170" r="20" fill="white" stroke="#2797BA" stroke-width="1.5"/>
+              <circle cx="230" cy="170" r="8" fill="#2797BA" opacity="0.35"/>
+              <rect x="42" y="108" width="70" height="22" rx="11" fill="white" stroke="#D2EAF5" stroke-width="1"/>
+              <text x="77" y="124" font-size="11" fill="#186282" font-family="Inter,sans-serif" text-anchor="middle" font-weight="600">kwaliteit</text>
+              <rect x="348" y="108" width="70" height="22" rx="11" fill="white" stroke="#C8E8D2" stroke-width="1"/>
+              <text x="383" y="124" font-size="11" fill="#347549" font-family="Inter,sans-serif" text-anchor="middle" font-weight="600">identiteit</text>
+              <rect x="24" y="210" width="92" height="22" rx="11" fill="white" stroke="#D2EAF5" stroke-width="1"/>
+              <text x="70" y="226" font-size="11" fill="#186282" font-family="Inter,sans-serif" text-anchor="middle" font-weight="600">ondersteuning</text>
+              <rect x="348" y="210" width="70" height="22" rx="11" fill="white" stroke="#C8E8D2" stroke-width="1"/>
+              <text x="383" y="226" font-size="11" fill="#347549" font-family="Inter,sans-serif" text-anchor="middle" font-weight="600">toekomst</text>
             </svg>
           </div>
-
         </div>
       </div>
     </section>
 
-
-    <!-- ═══════════════════════════════════════
-         2. VIDEO
-    ═══════════════════════════════════════ -->
-    <section id="video" aria-labelledby="video-title">
-      <div class="container video-section">
-
-        <div class="section-intro">
-          <span class="eyebrow">Uitleg in beeld</span>
-          <h2 id="video-title">Wat wordt er onderzocht?</h2>
-          <div class="rule"></div>
-          <p class="lead">
-            In deze animatie leggen we uit waarom de scholen samen naar de toekomst kijken.
-            U ziet wat er verandert in het onderwijs en waarom de scholen onderzoeken of
-            samenwerking kan helpen.
-          </p>
-          <p style="margin-top: 12px;">
-            We laten ook zien hoe het traject is opgebouwd. We werken stap voor stap en
-            kijken in elke fase wat goed is voor kinderen, ouders en medewerkers.
-            Daarnaast leggen we uit waar we naar kijken — bijvoorbeeld naar de kwaliteit
-            van het onderwijs, de identiteit van de scholen en hoe de organisatie eruit
-            kan zien. Ook ziet u welke kansen samenwerking kan bieden: sterker onderwijs,
-            betere ondersteuning voor kinderen en een school die klaar is voor de toekomst.
-          </p>
-        </div>
-
-        <div class="video-frame" role="region" aria-label="Informatievideo">
-          <iframe
-            src="https://www.youtube.com/embed/Q6n5lHCZRt0"
-            title="Uitlegvideo samenwerking CBS Op Dreef en OBS De Meerpaal"
-            allowfullscreen>
-          </iframe>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- ═══════════════════════════════════════
-         3. UITLEG – WAT IS ER AAN DE HAND
-    ═══════════════════════════════════════ -->
-    <section id="uitleg" aria-labelledby="uitleg-title">
+    <!-- Laatste nieuws + agenda -->
+    <section style="padding-block: var(--space-40);" aria-labelledby="home-news-title">
       <div class="container">
+        <div class="home-grid">
 
-        <div class="section-intro">
-          <span class="eyebrow">Wat speelt er?</span>
-          <h2 id="uitleg-title">Wat is er aan de hand?</h2>
-          <div class="rule"></div>
-        </div>
-
-        <div class="explanation__grid">
-
+          <!-- Laatste nieuws -->
           <div>
-            <p style="color: var(--color-neutral-700); margin-bottom: 20px;">
-              CBS Op Dreef en OBS De Meerpaal zijn twee basisscholen in Bruinisse.
-              Beide scholen willen ook in de toekomst goed onderwijs blijven bieden aan
-              alle kinderen in het dorp. Daarom onderzoeken de scholen samen of
-              intensievere samenwerking daarbij kan helpen. De eerste fase is afgerond.
-              Op basis daarvan is besloten door te gaan met een volgende fase, waarin
-              de plannen verder worden uitgewerkt. Dit zijn de belangrijkste punten:
+            <span class="eyebrow">Laatste nieuws</span>
+            <h2 id="home-news-title" style="margin-top:var(--space-6); margin-bottom:var(--space-16);">Terugblik bijeenkomsten 16 april</h2>
+            <p style="font-size:.95rem; margin-bottom:var(--space-12);">
+              Op 16 april vonden informatiebijeenkomsten plaats voor ouders en leden van beide scholen.
+              Er werd veel input opgehaald over de dagelijkse praktijk, identiteit en de schooldag.
+              De uitkomsten worden meegenomen in de verdere uitwerking.
             </p>
-            <ul class="check-list" role="list">
-              <li>
-                <span class="check-list__icon" aria-hidden="true">
-                  <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="2,6 5,9 10,3"/>
-                  </svg>
-                </span>
-                Beide scholen blijven op dit moment gewoon zoals ze zijn.
-              </li>
-              <li>
-                <span class="check-list__icon" aria-hidden="true">
-                  <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="2,6 5,9 10,3"/>
-                  </svg>
-                </span>
-                We werken de ideeën en mogelijkheden voor samenwerking verder uit.
-              </li>
-              <li>
-                <span class="check-list__icon" aria-hidden="true">
-                  <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="2,6 5,9 10,3"/>
-                  </svg>
-                </span>
-                We onderzoeken of en hoe samenwerking kan bijdragen aan sterker en
-                toekomstbestendig onderwijs.
-              </li>
-              <li>
-                <span class="check-list__icon" aria-hidden="true">
-                  <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="2,6 5,9 10,3"/>
-                  </svg>
-                </span>
-                Daarbij kijken we naar kwaliteit, identiteit en hoe de organisatie
-                eruit kan zien.
-              </li>
-              <li>
-                <span class="check-list__icon" aria-hidden="true">
-                  <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="2,6 5,9 10,3"/>
-                  </svg>
-                </span>
-                Medewerkers, ouders en andere betrokkenen denken mee in het proces.
-              </li>
-              <li>
-                <span class="check-list__icon" aria-hidden="true">
-                  <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="2,6 5,9 10,3"/>
-                  </svg>
-                </span>
-                Er is nog geen besluit genomen. Het doel is om goed te bepalen wat
-                het beste is voor de kinderen in Bruinisse, nu én in de toekomst.
-              </li>
-            </ul>
+            <a href="/nieuws-agenda/nieuwsberichten" class="btn btn--ghost" style="font-size:.85rem;">Alle nieuwsberichten →</a>
           </div>
 
-          <div class="callout-stack">
-            <div class="callout callout--blue">
-              <div>
-                <strong>Wat betekent 'verkenning'?</strong><br />
-                In de eerste fase hebben we onderzocht wat de kansen en aandachtspunten
-                zijn als de scholen meer samenwerken of samengaan. Nu zitten we in de
-                volgende fase. Daarin werken we deze ideeën verder uit en toetsen we of
-                ze haalbaar zijn en passen bij Bruinisse. Pas daarna kan er een besluit
-                worden genomen.
-              </div>
-            </div>
-            <div class="callout callout--blue">
-              <div>
-                <strong>Wat verandert er nu voor mijn kind?</strong><br />
-                Op dit moment verandert er niets. De lessen, de leerkrachten en de
-                schoollocaties blijven zoals ze zijn. Als er later wordt besloten een
-                volgende stap te zetten, kan dit gevolgen hebben voor het schooljaar
-                2026–2027. Of en wat er precies verandert, weten we nu nog niet.
-                Als er keuzes worden gemaakt die gevolgen hebben voor kinderen en
-                ouders, wordt dit altijd op tijd en duidelijk gecommuniceerd.
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ═══════════════════════════════════════
-         4. WAAROM
-    ═══════════════════════════════════════ -->
-    <section id="waarom" style="background: var(--color-bg-subtle);"
-             aria-labelledby="waarom-title">
-      <div class="container">
-
-        <div class="section-intro">
-          <span class="eyebrow">Achtergrond</span>
-          <h2 id="waarom-title">Waarom onderzoeken we dit?</h2>
-          <div class="rule"></div>
-          <p style="margin-top: 12px;">
-            Er spelen verschillende ontwikkelingen die maken dat we naar de toekomst
-            van het onderwijs in Bruinisse kijken. Geen van deze ontwikkelingen betekent
-            dat er al een besluit is genomen. We onderzoeken eerst zorgvuldig wat het
-            beste is voor kinderen, nu en in de toekomst.
-          </p>
-        </div>
-
-        <div class="card-grid-3">
-
-          <article class="card card--elevated why-card">
-            <div class="card-icon" aria-hidden="true">👶</div>
-            <h3>Minder leerlingen en kleine scholen</h3>
-            <p>
-              Het aantal kinderen daalt. Daardoor blijven scholen kleiner. Kleine scholen
-              moeten met minder mensen hetzelfde organiseren als grotere scholen. Dat maakt
-              het lastiger om alles goed te regelen, bijvoorbeeld bij ziekte of extra
-              ondersteuning.
-            </p>
-          </article>
-
-          <article class="card card--elevated why-card">
-            <div class="card-icon" aria-hidden="true">📖</div>
-            <h3>Onderwijs verandert</h3>
-            <p>
-              Scholen moeten steeds meer zelf regelen. Bijvoorbeeld extra ondersteuning
-              voor kinderen. Dat vraagt om meer kennis, meer samenwerking en meer mensen.
-              Voor kleine scholen is dat moeilijker te organiseren.
-            </p>
-          </article>
-
-          <article class="card card--elevated why-card">
-            <div class="card-icon" aria-hidden="true">🎯</div>
-            <h3>Kwaliteit en ondersteuning</h3>
-            <p>
-              Door samen te werken kunnen scholen meer bieden. Denk aan extra begeleiding,
-              meer expertise in school en betere ondersteuning voor kinderen die dat
-              nodig hebben.
-            </p>
-          </article>
-
-          <article class="card card--elevated why-card">
-            <div class="card-icon" aria-hidden="true">🏛️</div>
-            <h3>Organisatie en bestuur</h3>
-            <p>
-              De eisen aan scholen worden hoger. Er zijn meer regels, meer toezicht en
-              meer taken. Voor kleinere organisaties is dat lastiger vol te houden.
-              Samenwerken kan helpen om dit beter te organiseren.
-            </p>
-          </article>
-
-          <article class="card card--elevated why-card">
-            <div class="card-icon" aria-hidden="true">💡</div>
-            <h3>Financiële kwetsbaarheid</h3>
-            <p>
-              Kleine scholen zijn gevoeliger voor veranderingen. Als het aantal leerlingen
-              daalt, heeft dat snel invloed op geld en organisatie. Dat maakt het lastiger
-              om plannen voor de lange termijn te maken.
-            </p>
-          </article>
-
-          <article class="card card--elevated why-card">
-            <div class="card-icon" aria-hidden="true">🏘️</div>
-            <h3>Goed onderwijs voor Bruinisse</h3>
-            <p>
-              We willen dat kinderen in Bruinisse goed onderwijs blijven krijgen, ook in
-              de toekomst. Met keuze, kwaliteit en aandacht voor ieder kind. Samenwerking
-              kan helpen om dat te behouden en te versterken.
-            </p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ═══════════════════════════════════════
-         5. MOGELIJKHEDEN
-    ═══════════════════════════════════════ -->
-    <section aria-labelledby="poss-title">
-      <div class="container">
-
-        <div class="section-intro">
-          <span class="eyebrow">Mogelijkheden</span>
-          <h2 id="poss-title">Wat zou samenwerking kunnen betekenen?</h2>
-          <div class="rule"></div>
-        </div>
-
-        <div class="callout callout--green poss-notice" role="note">
-          <svg class="callout__icon" width="18" height="18" viewBox="0 0 24 24"
-               fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <circle cx="12" cy="12" r="10"/>
-            <line x1="12" y1="8" x2="12" y2="12"/>
-            <line x1="12" y1="16" x2="12.01" y2="16"/>
-          </svg>
+          <!-- Komende bijeenkomsten -->
           <div>
-            <strong>Dit zijn mogelijkheden — geen beloften.</strong>
-            Hieronder staat wat samenwerking kan opleveren. We onderzoeken dit stap voor
-            stap. Er is nog geen besluit genomen en niets staat vast.
+            <span class="eyebrow">Komende bijeenkomsten</span>
+            <h2 style="margin-top:var(--space-6); margin-bottom:var(--space-16);">Agenda</h2>
+            <ol class="agenda-list" style="margin-bottom:var(--space-16);">
+              <li class="agenda-item">
+                <div class="agenda-item__date-block">
+                  <span class="agenda-item__day">6</span>
+                  <span class="agenda-item__month">mei</span>
+                </div>
+                <div class="agenda-item__body">
+                  <h3>ALV CBS Op Dreef</h3>
+                  <p>20.00 uur</p>
+                </div>
+              </li>
+              <li class="agenda-item">
+                <div class="agenda-item__date-block">
+                  <span class="agenda-item__day">7</span>
+                  <span class="agenda-item__month">mei</span>
+                </div>
+                <div class="agenda-item__body">
+                  <h3>Ouderinformatiebijeenkomst beide scholen</h3>
+                  <p>Dorpshuis De Vanger · 19.30 uur</p>
+                </div>
+              </li>
+            </ol>
+            <a href="/nieuws-agenda/agenda" class="btn btn--ghost" style="font-size:.85rem;">Volledige agenda →</a>
           </div>
-        </div>
-
-        <div class="card-grid-3">
-
-          <article class="card card--elevated poss-card">
-            <span class="poss-tag">Mogelijk voordeel</span>
-            <h3>Breder aanbod voor leerlingen</h3>
-            <p>
-              Samen kunnen scholen meer bieden. Denk aan meer vakken, extra activiteiten
-              en meer mogelijkheden om kinderen te laten leren op een manier die bij
-              hen past.
-            </p>
-          </article>
-
-          <article class="card card--elevated poss-card">
-            <span class="poss-tag">Mogelijk voordeel</span>
-            <h3>Betere ondersteuning voor kinderen</h3>
-            <p>
-              Sommige kinderen hebben extra hulp nodig. Door samen te werken is er meer
-              kennis en meer ondersteuning beschikbaar. Daardoor kunnen kinderen beter
-              geholpen worden binnen de school.
-            </p>
-          </article>
-
-          <article class="card card--elevated poss-card">
-            <span class="poss-tag">Mogelijk voordeel</span>
-            <h3>Sterker en stabieler team</h3>
-            <p>
-              Een grotere organisatie maakt een team minder kwetsbaar. Het wordt
-              makkelijker om vervanging te regelen en om kennis en ervaring te delen
-              tussen leerkrachten.
-            </p>
-          </article>
-
-          <article class="card card--elevated poss-card">
-            <span class="poss-tag">Mogelijk voordeel</span>
-            <h3>Meer expertise in school</h3>
-            <p>
-              Samenwerken maakt het makkelijker om specialisten in te zetten.
-              Bijvoorbeeld op het gebied van gedrag, taal of rekenen. Zo kunnen scholen
-              beter inspelen op wat kinderen nodig hebben.
-            </p>
-          </article>
-
-          <article class="card card--elevated poss-card">
-            <span class="poss-tag">Mogelijk voordeel</span>
-            <h3>Toekomstbestendig onderwijs</h3>
-            <p>
-              Het onderwijs verandert snel. Door samen te werken kunnen scholen beter
-              omgaan met deze veranderingen en blijven ze klaar voor de toekomst.
-            </p>
-          </article>
-
-          <article class="card card--elevated poss-card">
-            <span class="poss-tag">Mogelijk voordeel</span>
-            <h3>Mogelijkheden voor betere voorzieningen</h3>
-            <p>
-              Samenwerken kan ook helpen bij plannen voor de toekomst. Bijvoorbeeld bij
-              samenwerking met de gemeente of bij een schoolgebouw dat beter past bij
-              het onderwijs van morgen.
-            </p>
-          </article>
 
         </div>
       </div>
     </section>
 
-
-    <!-- ═══════════════════════════════════════
-         6. TIJDLIJN
-    ═══════════════════════════════════════ -->
-    <section id="tijdlijn" class="timeline-section" aria-labelledby="tl-title">
-      <div class="container">
-
-        <div class="section-intro">
-          <span class="eyebrow">Proces</span>
-          <h2 id="tl-title">Hoe ziet het proces eruit?</h2>
-          <div class="rule"></div>
-          <p style="margin-top: 12px;">
-            Het traject bestaat uit vier fases. Na elke fase wordt gekeken of er een
-            volgende stap wordt gezet. Ouders en medewerkers worden tijdens het proces
-            steeds geïnformeerd en betrokken.
-          </p>
-        </div>
-
-        <ol class="timeline" role="list">
-
-          <li class="timeline__step timeline__step--active">
-            <div class="timeline__dot" aria-label="Huidige fase">1</div>
-            <span class="timeline__period">Voorjaar 2026 – nu</span>
-            <h3>Verdere uitwerking en toetsing</h3>
-            <p>
-              We werken de ideeën uit de eerste fase verder uit. We onderzoeken of deze
-              plannen haalbaar zijn en passen bij Bruinisse. Daarbij nemen we vragen en
-              zorgen van ouders en medewerkers mee. Ook wordt gekeken wat dit betekent
-              voor het onderwijs, de identiteit en de organisatie.
-            </p>
-          </li>
-
-          <li class="timeline__step timeline__step--upcoming">
-            <div class="timeline__dot">2</div>
-            <span class="timeline__period">Voorjaar 2026</span>
-            <h3>Besluit over vervolg</h3>
-            <p>
-              Aan het einde van deze fase wordt besloten of er een volgende stap wordt
-              gezet. Dit gebeurt op basis van alle informatie, gesprekken en uitwerkingen.
-            </p>
-          </li>
-
-          <li class="timeline__step timeline__step--upcoming">
-            <div class="timeline__dot">3</div>
-            <span class="timeline__period">Zomer 2026 – indien van toepassing</span>
-            <h3>Voorbereiding nieuwe situatie</h3>
-            <p>
-              Alleen als wordt besloten om door te gaan, start de voorbereiding. Er wordt
-              dan gekeken hoe een mogelijke samenwerking er in de praktijk uit kan zien,
-              bijvoorbeeld voor het schooljaar 2026–2027.
-            </p>
-          </li>
-
-          <li class="timeline__step timeline__step--upcoming">
-            <div class="timeline__dot">4</div>
-            <span class="timeline__period">Daarna</span>
-            <h3>Eventuele invoering</h3>
-            <p>
-              Als er uiteindelijk een besluit wordt genomen, gebeurt dit zorgvuldig en
-              stap voor stap. Ouders en medewerkers worden op tijd geïnformeerd over wat
-              dit betekent.
-            </p>
-          </li>
-
-        </ol>
-      </div>
-    </section>
-
-
-    <!-- ═══════════════════════════════════════
-         7. VOOR OUDERS
-    ═══════════════════════════════════════ -->
-    <section aria-labelledby="ouders-title">
-      <div class="container">
-
-        <div class="section-intro">
-          <span class="eyebrow">Voor ouders</span>
-          <h2 id="ouders-title">Wat betekent dit voor u en uw kind?</h2>
-          <div class="rule"></div>
-          <p style="margin-top: 12px;">
-            We begrijpen dat u vragen heeft. Dit kunnen we u op dit moment met zekerheid vertellen.
-          </p>
-        </div>
-
-        <div class="card-grid-2">
-
-          <article class="card card--elevated impact-card">
-            <span class="impact-card__icon" aria-hidden="true">🛡️</span>
-            <h3>Er verandert nu niets</h3>
-            <p>
-              Uw kind gaat gewoon naar school zoals u gewend bent.
-              De lessen, de leerkrachten en de locatie blijven hetzelfde.
-            </p>
-          </article>
-
-          <article class="card card--elevated impact-card">
-            <span class="impact-card__icon" aria-hidden="true">📅</span>
-            <h3>Er kan later iets veranderen</h3>
-            <p>
-              We onderzoeken of samenwerking een volgende stap krijgt. Als dat zo is,
-              kan dit gevolgen hebben voor het schooljaar 2026–2027. Wat dat precies
-              betekent, weten we nu nog niet. Als er iets verandert, hoort u dat op
-              tijd en duidelijk.
-            </p>
-          </article>
-
-          <article class="card card--elevated impact-card">
-            <span class="impact-card__icon" aria-hidden="true">👂</span>
-            <h3>Uw mening telt</h3>
-            <p>
-              We vinden het belangrijk om te horen wat u denkt. Er komen momenten
-              waarop u vragen kunt stellen en uw mening kunt geven. Uw inbreng nemen
-              we mee in het proces.
-            </p>
-          </article>
-
-          <article class="card card--elevated impact-card">
-            <span class="impact-card__icon" aria-hidden="true">📢</span>
-            <h3>U blijft op de hoogte</h3>
-            <p>
-              We houden u stap voor stap op de hoogte. Via deze website,
-              nieuwsbrieven en bijeenkomsten laten we weten waar we staan en
-              wat de volgende stappen zijn.
-            </p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ═══════════════════════════════════════
-         8. UPDATES
-    ═══════════════════════════════════════ -->
-    <section id="updates" aria-labelledby="updates-title">
-      <div class="container">
-
-        <div class="section-intro">
-          <span class="eyebrow">Nieuws</span>
-          <h2 id="updates-title">Updates</h2>
-          <div class="rule"></div>
-          <p>Hier vindt u de laatste berichten over het traject.</p>
-        </div>
-
-        <div class="updates-list">
-
-          <article class="update-card">
-            <div class="update-card__header">
-              <span class="update-card__date">April 2026</span>
-            </div>
-            <h3>Terugblik ouderbijeenkomsten maart en april</h3>
-            <p>
-              In maart en april hebben OBS De Meerpaal en CBS Op Dreef verschillende
-              ouderbijeenkomsten georganiseerd in het kader van het onderzoek naar samenwerking.
-            </p>
-            <p>
-              Op 26 maart vond een gezamenlijke ouderbijeenkomst plaats met een grote opkomst
-              van ouders van beide scholen. Tijdens deze avond is uitleg gegeven over het
-              traject en is input opgehaald via gesprekken en een interactieve vragenronde.
-              Ouders deelden vragen, zorgen en ideeën over onderwerpen zoals identiteit,
-              communicatie en het welzijn van de kinderen.
-            </p>
-            <p>
-              Op 9 april was er een vervolgbijeenkomst met meer uitleg over de vorming van
-              een identiteitscommissie en een klankbordgroep. De sfeer was positief en open.
-              Een ouder van Samenspel Wolphaartsdijk — een samenwerkingsschool die ongeveer
-              zes jaar geleden is ontstaan uit een openbare en een christelijke school —
-              deelde haar praktijkervaring en beantwoordde vragen. Haar bijdrage werd door
-              de aanwezige ouders zeer gewaardeerd.
-            </p>
-            <p>
-              De opkomst en betrokkenheid laten zien dat het traject leeft in Bruinisse.
-              Alle opgehaalde input wordt meegenomen in de volgende stappen.
-            </p>
-          </article>
-
-          <article class="update-card update-card--highlighted">
-            <div class="update-card__header">
-              <span class="update-card__date">10 april 2026</span>
-              <span class="badge badge--green">Aankomend</span>
-            </div>
-            <h3>Uitnodiging informatiebijeenkomsten 16 april</h3>
-            <p>
-              Op donderdagavond 16 april vinden er informatiebijeenkomsten plaats voor
-              ouders en (voor CBS Op Dreef) leden.
-            </p>
-            <p>
-              Tijdens deze bijeenkomsten is opnieuw een ouder van Samenspel Wolphaartsdijk
-              aanwezig. Zij heeft ervaring met een vergelijkbaar traject waarin een openbare
-              en een christelijke school zijn samengegaan tot één samenwerkingsschool.
-              Zij deelt haar ervaringen en er is volop gelegenheid om vragen te stellen.
-            </p>
-            <p>
-              Aanmelden kan via
-              <a href="mailto:directie@cbsopdreef.nl">directie@cbsopdreef.nl</a>
-              of
-              <a href="mailto:c.segers@obase.nl">c.segers@obase.nl</a>.
-            </p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ═══════════════════════════════════════
-         9. AGENDA
-    ═══════════════════════════════════════ -->
-    <section id="agenda" class="agenda-section" aria-labelledby="agenda-title">
-      <div class="container">
-
-        <div class="section-intro">
-          <span class="eyebrow">Planning</span>
-          <h2 id="agenda-title">Agenda</h2>
-          <div class="rule"></div>
-          <p>De komende periode staan de volgende bijeenkomsten gepland.</p>
-        </div>
-
-        <ol class="agenda-list" role="list">
-
-          <li class="agenda-item agenda-item--past">
-            <div class="agenda-item__date-block">
-              <span class="agenda-item__day">9</span>
-              <span class="agenda-item__month">apr</span>
-            </div>
-            <div class="agenda-item__body">
-              <h3>Klankbord- en ouderinformatiebijeenkomst</h3>
-              <p>CBS Op Dreef &nbsp;·&nbsp; 19.30 – 21.00 uur</p>
-            </div>
-            <span class="agenda-item__tag agenda-item__tag--past">Afgelopen</span>
-          </li>
-
-          <li class="agenda-item">
-            <div class="agenda-item__date-block">
-              <span class="agenda-item__day">16</span>
-              <span class="agenda-item__month">apr</span>
-            </div>
-            <div class="agenda-item__body">
-              <h3>Ouderbijeenkomst OBS De Meerpaal</h3>
-              <p>19.00 – 20.00 uur</p>
-            </div>
-            <span class="agenda-item__tag">Aankomend</span>
-          </li>
-
-          <li class="agenda-item">
-            <div class="agenda-item__date-block">
-              <span class="agenda-item__day">16</span>
-              <span class="agenda-item__month">apr</span>
-            </div>
-            <div class="agenda-item__body">
-              <h3>Leden- en ouderinformatiebijeenkomst CBS Op Dreef</h3>
-              <p>20.00 – 21.15 uur &nbsp;·&nbsp; Locatie volgt (waarschijnlijk CBS Op Dreef)</p>
-            </div>
-            <span class="agenda-item__tag">Aankomend</span>
-          </li>
-
-          <li class="agenda-item">
-            <div class="agenda-item__date-block">
-              <span class="agenda-item__day">6</span>
-              <span class="agenda-item__month">mei</span>
-            </div>
-            <div class="agenda-item__body">
-              <h3>Algemene Ledenvergadering (ALV)</h3>
-              <p>CBS Op Dreef &nbsp;·&nbsp; 20.00 uur</p>
-            </div>
-            <span class="agenda-item__tag">Aankomend</span>
-          </li>
-
-          <li class="agenda-item">
-            <div class="agenda-item__date-block">
-              <span class="agenda-item__day">7</span>
-              <span class="agenda-item__month">mei</span>
-            </div>
-            <div class="agenda-item__body">
-              <h3>Ouderinformatiebijeenkomst beide scholen en Kibeo ouders</h3>
-              <p>Dorpshuis De Vanger &nbsp;·&nbsp; 19.30 – 21.00 uur</p>
-            </div>
-            <span class="agenda-item__tag">Aankomend</span>
-          </li>
-
-          <li class="agenda-item">
-            <div class="agenda-item__date-block">
-              <span class="agenda-item__day">19</span>
-              <span class="agenda-item__month">mei</span>
-            </div>
-            <div class="agenda-item__body">
-              <h3>Algemene Ledenvergadering (ALV)</h3>
-              <p>CBS Op Dreef &nbsp;·&nbsp; 20.00 uur</p>
-            </div>
-            <span class="agenda-item__tag">Aankomend</span>
-          </li>
-
-        </ol>
-      </div>
-    </section>
-
-
-    <!-- ═══════════════════════════════════════
-         10. FAQ
-    ═══════════════════════════════════════ -->
-    <section id="faq" class="faq-section" aria-labelledby="faq-title">
-      <div class="container">
-
-        <div class="section-intro">
-          <span class="eyebrow">Veelgestelde vragen</span>
-          <h2 id="faq-title">Veel gestelde vragen</h2>
-          <div class="rule"></div>
-        </div>
-
-        <div class="faq-list" role="list">
-
-          <details>
-            <summary>
-              Is de beslissing al genomen?
-              <span class="summary__icon" aria-hidden="true">
-                <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="6" y1="2" x2="6" y2="10"/><line x1="2" y1="6" x2="10" y2="6"/>
-                </svg>
-              </span>
-            </summary>
-            <div class="faq__answer">
-              Nee. Er is nog geen besluit genomen. De scholen werken nu de plannen verder
-              uit en onderzoeken of samenwerking wenselijk en haalbaar is. Pas daarna
-              wordt besloten of er een volgende stap wordt gezet – en alleen als daar
-              voldoende draagvlak voor is.
-            </div>
-          </details>
-
-          <details>
-            <summary>
-              Is het al besloten dat er één school komt?
-              <span class="summary__icon" aria-hidden="true">
-                <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="6" y1="2" x2="6" y2="10"/><line x1="2" y1="6" x2="10" y2="6"/>
-                </svg>
-              </span>
-            </summary>
-            <div class="faq__answer">
-              Nee. Dat is niet besloten. Een mogelijke gezamenlijke school is één van de
-              opties die wordt onderzocht. Of dit de beste oplossing is, wordt in deze
-              fase verder bekeken. Er is nog geen keuze gemaakt.
-            </div>
-          </details>
-
-          <details>
-            <summary>
-              Wat betekent dit voor mijn kind?
-              <span class="summary__icon" aria-hidden="true">
-                <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="6" y1="2" x2="6" y2="10"/><line x1="2" y1="6" x2="10" y2="6"/>
-                </svg>
-              </span>
-            </summary>
-            <div class="faq__answer">
-              Op dit moment verandert er niets voor uw kind. De lessen, de leerkrachten
-              en de school blijven zoals ze zijn. Als er later keuzes worden gemaakt,
-              kan dit gevolgen hebben voor het schooljaar 2026–2027. Als dat zo is,
-              wordt u op tijd en duidelijk geïnformeerd.
-            </div>
-          </details>
-
-          <details>
-            <summary>
-              Gaat mijn kind straks naar een andere school?
-              <span class="summary__icon" aria-hidden="true">
-                <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="6" y1="2" x2="6" y2="10"/><line x1="2" y1="6" x2="10" y2="6"/>
-                </svg>
-              </span>
-            </summary>
-            <div class="faq__answer">
-              Dat is nu niet aan de orde. We onderzoeken wat mogelijk is. Er zijn
-              verschillende vormen van samenwerking denkbaar. Of er iets verandert,
-              weten we nu nog niet. Er is nog niets besloten.
-            </div>
-          </details>
-
-          <details>
-            <summary>
-              Verdwijnt de eigen identiteit van de school?
-              <span class="summary__icon" aria-hidden="true">
-                <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="6" y1="2" x2="6" y2="10"/><line x1="2" y1="6" x2="10" y2="6"/>
-                </svg>
-              </span>
-            </summary>
-            <div class="faq__answer">
-              Nee, dat is niet het uitgangspunt. CBS Op Dreef is een christelijke school
-              en OBS De Meerpaal is een openbare school. Beide identiteiten zijn
-              belangrijk. In het onderzoek wordt zorgvuldig gekeken hoe deze identiteiten
-              behouden en vormgegeven kunnen worden.
-            </div>
-          </details>
-
-          <details>
-            <summary>
-              Wanneer weten we meer?
-              <span class="summary__icon" aria-hidden="true">
-                <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="6" y1="2" x2="6" y2="10"/><line x1="2" y1="6" x2="10" y2="6"/>
-                </svg>
-              </span>
-            </summary>
-            <div class="faq__answer">
-              Het traject verloopt in fases. In deze fase worden de plannen verder
-              uitgewerkt. Daarna wordt besloten of er een volgende stap wordt gezet.
-              Zodra er meer duidelijk is, wordt u geïnformeerd via deze website,
-              nieuwsbrieven en bijeenkomsten.
-            </div>
-          </details>
-
-        </div>
-
-        <p class="faq__cta">
-          <a href="#contact" class="btn btn--ghost">Stel zelf een vraag</a>
-        </p>
-
-      </div>
-    </section>
-
-
-    <!-- ═══════════════════════════════════════
-         9. CONTACT
-    ═══════════════════════════════════════ -->
-    <section id="contact" aria-labelledby="contact-title">
+    <!-- Vraag sectie -->
+    <section style="background:var(--color-bg-subtle); padding-block:var(--space-32);" aria-labelledby="home-contact-title">
       <div class="container">
         <div class="contact__box">
-
-          <span class="eyebrow">Contact</span>
-          <h2 id="contact-title">Heeft u een vraag of opmerking?</h2>
-          <p>
-            We horen graag van u. Stel uw vraag via dit formulier.
-            We reageren binnen twee werkdagen.
-          </p>
-
-          <form class="contact__form"
-                action="https://formsubmit.co/directie@cbsopdreef.nl"
-                method="POST">
-
-            <!-- Formsubmit instellingen -->
-            <input type="hidden" name="_cc"      value="c.segers@obase.nl" />
-            <input type="hidden" name="_subject" value="Nieuwe vraag via de website – Samen Verder" />
-            <input type="hidden" name="_next"    value="bedankt.html" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-
-            <div class="contact__row">
-              <div class="contact__field">
-                <label for="naam">Naam</label>
-                <input type="text" id="naam" name="naam"
-                       placeholder="Uw naam"
-                       autocomplete="name" required />
-              </div>
-              <div class="contact__field">
-                <label for="email">E-mailadres</label>
-                <input type="email" id="email" name="email"
-                       placeholder="uw@email.nl"
-                       autocomplete="email" required />
-              </div>
-            </div>
-
-            <div class="contact__field">
-              <label for="school">Mijn kind zit op (optioneel)</label>
-              <select id="school" name="school">
-                <option value="">Kies een school</option>
-                <option value="CBS Op Dreef">CBS Op Dreef</option>
-                <option value="OBS De Meerpaal">OBS De Meerpaal</option>
-                <option value="Geen van beide">Geen van beide</option>
-              </select>
-            </div>
-
-            <div class="contact__field">
-              <label for="bericht">Uw vraag of opmerking</label>
-              <textarea id="bericht" name="bericht"
-                        placeholder="Schrijf hier uw vraag of opmerking…"
-                        required></textarea>
-            </div>
-
-            <div class="contact__submit">
-              <button type="submit" class="btn btn--primary">
-                Verstuur bericht
-              </button>
-            </div>
-
-          </form>
-
-          <p class="contact__privacy">
-            Uw gegevens worden alleen gebruikt om uw vraag te beantwoorden
-            en niet gedeeld met anderen.
-          </p>
-
+          <span class="eyebrow">Vragen?</span>
+          <h2 id="home-contact-title">Heeft u een vraag of opmerking?</h2>
+          <p>We horen graag van u. Stel uw vraag via het contactformulier — we reageren binnen twee werkdagen.</p>
+          <a href="/meedenken/stel-een-vraag" class="btn btn--primary" style="margin-top:var(--space-12);">Stel een vraag →</a>
         </div>
       </div>
     </section>
 
   </main>
 
-
-  <!-- ═══════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════ -->
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container--wide footer__inner">
-
       <div class="footer__logos">
-        <img src="brand_assets/logo cbs op dreef.png"
-             alt="CBS Op Dreef Bruinisse" />
+        <img src="/brand_assets/logo cbs op dreef.png" alt="CBS Op Dreef" />
         <div class="nav__sep" aria-hidden="true"></div>
-        <img src="brand_assets/logo obs de meerpaal .png"
-             alt="OBS De Meerpaal Bruinisse" />
+        <img src="/brand_assets/logo obs de meerpaal .png" alt="OBS De Meerpaal" />
       </div>
-
-      <p class="footer__text">
-        © 2026 CBS Op Dreef &amp; OBS De Meerpaal, Bruinisse<br />
-        Dit is een informatiewebsite over een lopende verkenning.
-      </p>
-
-      <nav class="footer__links" aria-label="Footernavigatie">
-        <a href="#">Privacy</a>
-        <a href="#">Toegankelijkheid</a>
-        <a href="#contact">Contact</a>
+      <p class="footer__tagline">CBS Op Dreef en OBS De Meerpaal — samen onderzoeken we de toekomst van het onderwijs in Bruinisse.</p>
+      <nav class="footer__links" aria-label="Footer navigatie">
+        <a href="/meedenken/stel-een-vraag">Contact</a>
+        <a href="/wat-speelt-er/veelgestelde-vragen">Veelgestelde vragen</a>
+        <a href="/nieuws-agenda/agenda">Agenda</a>
       </nav>
-
+      <p class="footer__disclaimer">Er is nog geen besluit genomen. De informatie op deze website wordt regelmatig bijgewerkt.</p>
     </div>
   </footer>
 
-
   <script>
-    // ── Mobile nav toggle ──────────────────────────────
+    // Mobile nav toggle
     const toggle = document.getElementById('nav-toggle');
-    const links  = document.getElementById('nav-links');
-
+    const navLinks = document.getElementById('nav-links');
     toggle.addEventListener('click', () => {
-      const open = links.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', String(open));
+      const isOpen = navLinks.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen);
     });
 
-    // Close mobile nav when a link is clicked
-    links.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        links.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
-      });
-    });
-
-    // ── Smooth scroll ──────────────────────────────────
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        const target = document.querySelector(a.getAttribute('href'));
-        if (target) {
+    // Mobile dropdown toggle
+    document.querySelectorAll('.nav__item.has-dropdown .nav__toplevel').forEach(link => {
+      link.addEventListener('click', e => {
+        if (window.innerWidth <= 960) {
           e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          link.closest('.nav__item').classList.toggle('is-open');
         }
       });
     });
+
+    // Active nav state
+    const path = window.location.pathname;
+    document.querySelectorAll('.nav__toplevel').forEach(link => {
+      const href = link.getAttribute('href');
+      if (href !== '/' && path.startsWith(href)) {
+        link.closest('.nav__item').classList.add('is-active');
+      }
+    });
+    document.querySelectorAll('.nav__dropdown a').forEach(link => {
+      if (link.getAttribute('href') === path) {
+        link.classList.add('is-current');
+      }
+    });
+
+    // Redirect old hash anchors to new pages
+    const hashMap = {
+      '#uitleg': '/wat-speelt-er',
+      '#waarom': '/wat-speelt-er/waarom-dit-traject',
+      '#tijdlijn': '/het-proces/planning-tijdlijn',
+      '#updates': '/nieuws-agenda/nieuwsberichten',
+      '#agenda': '/nieuws-agenda/agenda',
+      '#faq': '/wat-speelt-er/veelgestelde-vragen',
+      '#contact': '/meedenken/stel-een-vraag',
+      '#video': '/wat-speelt-er/waarom-dit-traject'
+    };
+    const hash = window.location.hash;
+    if (hash && hashMap[hash]) {
+      window.location.replace(hashMap[hash]);
+    }
   </script>
 
 </body>
