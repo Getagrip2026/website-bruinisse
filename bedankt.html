@@ -3,29 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bericht ontvangen – Samen Verder</title>
+  <title>Bedankt – Samen Verder Bruinisse</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-
-  <header>
-    <nav class="nav" aria-label="Hoofdnavigatie">
-      <div class="container--wide nav__inner">
-        <div class="nav__logos">
-          <img src="brand_assets/logo cbs op dreef.png" alt="CBS Op Dreef" />
-          <div class="nav__sep" aria-hidden="true"></div>
-          <img src="brand_assets/logo obs de meerpaal .png" alt="OBS De Meerpaal" />
-        </div>
-      </div>
-    </nav>
-  </header>
+  <div class="status-bar" role="status"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Fase 2 — er is nog geen besluit genomen</div>
+  <header><nav class="nav" aria-label="Hoofdnavigatie"><div class="container--wide nav__inner"><div class="nav__logos"><a href="/"><img src="/brand_assets/logo cbs op dreef.png" alt="CBS Op Dreef" /></a><div class="nav__sep" aria-hidden="true"></div><a href="/"><img src="/brand_assets/logo obs de meerpaal .png" alt="OBS De Meerpaal" /></a></div></div></nav></header>
 
   <main>
     <section style="min-height: 60vh; display: flex; align-items: center;">
-      <div class="container" style="text-align: center;">
+      <div class="container" style="text-align: center; padding-block: var(--space-40);">
 
         <div style="
           width: 64px; height: 64px;
@@ -33,7 +23,7 @@
           border: 2px solid var(--color-green-100);
           border-radius: 50%;
           display: flex; align-items: center; justify-content: center;
-          margin: 0 auto 24px;
+          margin: 0 auto var(--space-20);
         " aria-hidden="true">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
                stroke="var(--color-green-500)" stroke-width="2.5">
@@ -41,28 +31,16 @@
           </svg>
         </div>
 
-        <h1 style="margin-bottom: 12px;">Bedankt voor uw bericht</h1>
-        <p class="lead" style="max-width: 480px; margin-inline: auto; margin-bottom: 32px;">
-          We hebben uw vraag ontvangen en reageren binnen twee werkdagen.
+        <h1 style="margin-bottom: var(--space-8);">Bedankt!</h1>
+        <p class="lead" style="max-width: 480px; margin-inline: auto; margin-bottom: var(--space-24);">
+          Uw bericht is succesvol verzonden.
         </p>
-        <a href="index.html" class="btn btn--ghost">Terug naar de website</a>
+        <a href="/" class="btn btn--ghost">Terug naar de website</a>
 
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container--wide footer__inner">
-      <div class="footer__logos">
-        <img src="brand_assets/logo cbs op dreef.png" alt="CBS Op Dreef Bruinisse" />
-        <div class="nav__sep" aria-hidden="true"></div>
-        <img src="brand_assets/logo obs de meerpaal .png" alt="OBS De Meerpaal Bruinisse" />
-      </div>
-      <p class="footer__text">
-        © 2026 CBS Op Dreef &amp; OBS De Meerpaal, Bruinisse
-      </p>
-    </div>
-  </footer>
-
+  <footer class="site-footer"><div class="container--wide footer__inner"><div class="footer__logos"><img src="/brand_assets/logo cbs op dreef.png" alt="CBS Op Dreef" /><div class="nav__sep" aria-hidden="true"></div><img src="/brand_assets/logo obs de meerpaal .png" alt="OBS De Meerpaal" /></div><p class="footer__tagline">CBS Op Dreef en OBS De Meerpaal — samen onderzoeken we de toekomst van het onderwijs in Bruinisse.</p><p class="footer__disclaimer">Er is nog geen besluit genomen. De informatie op deze website wordt regelmatig bijgewerkt.</p></div></footer>
 </body>
 </html>
