@@ -1901,19 +1901,36 @@ section[id] {
 .radio-group {
   display: flex;
   flex-direction: column;
-  gap: var(--space-8);
+  gap: var(--space-6);
 }
 
 .radio-group label {
   display: flex;
   align-items: center;
-  gap: var(--space-8);
+  gap: var(--space-10);
   font-weight: 400;
   cursor: pointer;
+  padding: var(--space-10) var(--space-12);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg-subtle);
+  transition: border-color .15s, background .15s;
+}
+
+.radio-group label:hover {
+  border-color: var(--color-blue-300);
+  background: var(--color-blue-50);
+}
+
+.radio-group label:has(input:checked) {
+  background: var(--color-blue-500);
+  border-color: var(--color-blue-500);
+  color: white;
+  font-weight: 600;
 }
 
 .radio-group input[type="radio"] {
-  accent-color: var(--color-blue-500);
+  accent-color: white;
   width: 18px;
   height: 18px;
   flex-shrink: 0;
